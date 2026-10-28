@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover,user-scalable=no">
+<meta name="theme-color" content="#0b0c10">
+<title>Pixel 11 · Android Simulator</title>
+<link rel="stylesheet" href="css/fonts.css">
+<link rel="stylesheet" href="css/os.css">
+<link rel="stylesheet" href="css/apps.css">
+</head>
+<body class="dark">
+<div id="stage">
+  <div id="device">
+    <button class="hw-btn power" id="hw-power" title="Power (P)"></button>
+    <button class="hw-btn volup" id="hw-volup" title="Volume up"></button>
+    <button class="hw-btn voldn" id="hw-voldn" title="Volume down"></button>
+
+    <div id="screen" data-sb="light">
+      <div id="wallpaper"></div>
+
+      <div id="home">
+        <div id="pages"></div>
+        <div id="page-dots"></div>
+        <div id="dock"></div>
+        <div id="searchbar">
+          <span class="g-logo">G</span>
+          <span class="sb-hint">Search</span>
+          <span class="mi sbar-ic">mic</span>
+          <span class="mi sbar-ic">center_focus_weak</span>
+        </div>
+      </div>
+
+      <div id="drawer">
+        <div id="drawer-handle"></div>
+        <div id="drawer-suggest"></div>
+        <div id="drawer-list" class="scroll"></div>
+        <div id="drawer-search"><span class="mi">search</span><input id="drawer-q" placeholder="Search your phone and more" autocomplete="off" spellcheck="false"></div>
+      </div>
+
+      <div id="apps"></div>
+      <div id="recents"></div>
+      <div id="popups"></div>
+
+      <div class="edge" id="edge-l"></div>
+      <div class="edge" id="edge-r"></div>
+      <div id="nav-zone"><div id="navpill"></div></div>
+
+      <div id="shade"></div>
+      <div id="headsup"></div>
+      <div id="statusbar"></div>
+      <div id="lock"></div>
+      <div id="volume"></div>
+      <div id="alarm-ring"></div>
+      <div id="toast"></div>
+
+      <div id="nightlight"></div>
+      <div id="dim"></div>
+      <div id="cutout"></div>
+      <div id="aod"><div class="aod-t"></div><div class="aod-d"></div><div class="aod-n">Tap or press power to wake</div></div>
+      <div id="boot"><div class="boot-g">Pixel</div></div>
+    </div>
+  </div>
+
+  <div id="toolbar">
+    <button data-act="back" title="Back (Esc)"><span class="mi">arrow_back</span></button>
+    <button data-act="home" title="Home (H)"><span class="mi fill">circle</span></button>
+    <button data-act="recents" title="Recents (R)"><span class="mi">crop_square</span></button>
+    <i></i>
+    <button data-act="power" title="Power / screen off (P)"><span class="mi">power_settings_new</span></button>
+    <button data-act="volup" title="Volume up"><span class="mi">volume_up</span></button>
+    <button data-act="voldn" title="Volume down"><span class="mi">volume_down</span></button>
+    <i></i>
+    <button data-act="reset" title="Factory reset the simulator"><span class="mi">restart_alt</span></button>
+  </div>
+</div>
+
+<script src="js/util.js"></script>
+<script src="js/os.js"></script>
+<script src="js/shell.js"></script>
+<script src="js/apps/generic.js"></script>
+<script src="js/apps/calculator.js"></script>
+<script src="js/apps/clock.js"></script>
+<script src="js/apps/calendar.js"></script>
+<script src="js/apps/notes.js"></script>
+<script src="js/apps/weather.js"></script>
+<script src="js/apps/phone.js"></script>
+<script src="js/apps/messages.js"></script>
+<script src="js/apps/camera.js"></script>
+<script src="js/apps/photos.js"></script>
+<script src="js/apps/chrome.js"></script>
+<script src="js/apps/maps.js"></script>
+<script src="js/apps/store.js"></script>
+<script src="js/apps/settings.js"></script>
+<script src="js/boot.js"></script>
+</body>
+</html>
